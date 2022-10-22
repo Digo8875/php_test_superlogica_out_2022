@@ -7,9 +7,15 @@ use App\Models\User;
 
 class FormExerciseController extends Controller
 {
+    public function index()
+    {
+        $users = User::get();
+        return view('exercise_1.index', ['users' => $users]);
+    }
+
     public function form()
     {
-        return view('form');
+        return view('exercise_1.form');
     }
 
     public function store(RegisterPostRequest $request)
@@ -24,6 +30,6 @@ class FormExerciseController extends Controller
 
         User::create($userData);
 
-        return redirect()->route('home');
+        return redirect()->route('exercise_1.index');
     }
 }
