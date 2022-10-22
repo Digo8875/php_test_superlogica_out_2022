@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home')->name('home');
-});
+    return view('home');
+})->name('home');
 
 #Exercício 1 - Formulário
 Route::get('/form', [App\Http\Controllers\FormExerciseController::class, 'form'])->name('form');
