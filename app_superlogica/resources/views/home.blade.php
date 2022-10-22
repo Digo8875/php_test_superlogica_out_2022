@@ -2,9 +2,9 @@
 
 @section('content')
     <div class="col-12 m-0 p-0">
-        <div class="row m-0 p-0 justify-content-center">
+        <div class="row m-0 p-0">
             <div class="col-1">
-                <a href="{{ route('form') }}" class="btn btn-info">
+                <a href="{{ route('exercise_1.index') }}" class="btn btn-info">
                     Exercício 1
                 </a>
             </div>
